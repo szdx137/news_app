@@ -56,21 +56,38 @@ class BlogTile extends StatelessWidget {
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
             ),
+            SizedBox(
+              height: 10,
+            ),
             Container(
               child: Row(
                 children: [
-                  Icon(Icons.date_range),
-                  Text(
-                    publishedAtDate,
-                    textAlign: TextAlign.left,
+                  Expanded(
+                    child: Container(
+                      alignment: Alignment.centerRight,
+                      child: Row(
+                        children: [
+                          Icon(Icons.date_range),
+                          Text(
+                            publishedAtDate,
+                            textAlign: TextAlign.left,
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Icon(Icons.access_time),
-                  Text(
-                    publishedAtTime,
-                    textAlign: TextAlign.left,
+                  Expanded(
+                    child: Container(
+                      child: Row(
+                        children: [
+                          Icon(Icons.access_time),
+                          Text(
+                            publishedAtTime,
+                            textAlign: TextAlign.left,
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                 ],
               ),
