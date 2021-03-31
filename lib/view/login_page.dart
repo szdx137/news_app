@@ -34,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget _uiSetup(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: Theme.of(context).accentColor,
+      backgroundColor: Theme.of(context).primaryColor,
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -78,16 +78,16 @@ class _LoginPageState extends State<LoginPage> {
                             enabledBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
                                 color: Theme.of(context)
-                                    .accentColor
+                                    .primaryColor
                                     .withOpacity(0.2),
                               ),
                             ),
                             focusedBorder: UnderlineInputBorder(
                                 borderSide: BorderSide(
-                                    color: Theme.of(context).accentColor)),
+                                    color: Theme.of(context).primaryColor)),
                             prefixIcon: Icon(
                               Icons.email,
-                              color: Theme.of(context).accentColor,
+                              color: Theme.of(context).primaryColor,
                             ),
                           ),
                         ),
@@ -106,16 +106,16 @@ class _LoginPageState extends State<LoginPage> {
                             enabledBorder: UnderlineInputBorder(
                               borderSide: BorderSide(
                                 color: Theme.of(context)
-                                    .accentColor
+                                    .primaryColor
                                     .withOpacity(0.2),
                               ),
                             ),
                             focusedBorder: UnderlineInputBorder(
                                 borderSide: BorderSide(
-                                    color: Theme.of(context).accentColor)),
+                                    color: Theme.of(context).primaryColor)),
                             prefixIcon: Icon(
                               Icons.lock,
-                              color: Theme.of(context).accentColor,
+                              color: Theme.of(context).primaryColor,
                             ),
                             suffixIcon: IconButton(
                               onPressed: () {
@@ -124,7 +124,7 @@ class _LoginPageState extends State<LoginPage> {
                                 });
                               },
                               color: Theme.of(context)
-                                  .accentColor
+                                  .primaryColor
                                   .withOpacity(hidePassword ? 0.2 : 0.8),
                               icon: Icon(hidePassword
                                   ? Icons.visibility_off
@@ -173,7 +173,7 @@ class _LoginPageState extends State<LoginPage> {
                             "Login",
                             style: TextStyle(color: Colors.white),
                           ),
-                          color: Theme.of(context).accentColor,
+                          color: Theme.of(context).primaryColor,
                           shape: StadiumBorder(),
                         ),
                         SizedBox(height: 15),

@@ -35,9 +35,9 @@ class _CategoryNewsState extends State<CategoryNews> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).accentColor,
+      backgroundColor: Theme.of(context).primaryColor,
       appBar: AppBar(
-        backgroundColor: Theme.of(context).accentColor,
+        backgroundColor: Theme.of(context).primaryColor,
         title: Text(widget.category.toUpperCase()),
       ),
       body: isLoading

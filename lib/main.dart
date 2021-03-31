@@ -20,12 +20,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: 'Poppins',
-        primaryColor: Colors.white,
+        primaryColor: Colors.grey[400],
         floatingActionButtonTheme: FloatingActionButtonThemeData(
           elevation: 0,
           foregroundColor: Colors.white,
         ),
-        accentColor: Colors.grey[400],
+        accentColor: Colors.red,
         textTheme: TextTheme(
           headline1: TextStyle(fontSize: 22.0, color: Colors.grey),
           headline2: TextStyle(
